@@ -6,7 +6,7 @@ class ProcessRunner
   # => (see IO#popen) for more information on available options.
   # @return [IO] Pipe to the started process.
   # @raise (see IO#popen)
-  def self.go(command, options)
+  def self.go(command, options={})
     pipe = IO.popen command.push(options)
 
     Process.detach pipe.pid
