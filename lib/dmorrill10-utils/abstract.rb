@@ -1,4 +1,9 @@
+
+require File.expand_path('../class', __FILE__)
+
 module Abstract
+  exceptions :method_not_implemented
+
   private
 
   def abstract_class_name
@@ -12,7 +17,6 @@ module Abstract
   end
 
   def enforce_abstract(method)
-    puts "Please redefine #{abstract_class_name}##{method}"
-    exit 0
+    raise MethodNotImplemented, "Please redefine #{abstract_class_name}##{method}"
   end
 end
