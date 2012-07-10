@@ -8,8 +8,9 @@ require File.expand_path('../lib/dmorrill10-utils/version', __FILE__)
 
 Rake::TestTask.new do |t|
   t.libs << "lib" << 'spec/support'
-  t.pattern = 'specs/**/*_spec.rb'
+  t.test_files = FileList['spec/**/*_spec.rb']
   t.verbose = true
+  t.warning = true
 end
 
 desc 'Build gem'

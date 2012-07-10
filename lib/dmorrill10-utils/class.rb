@@ -1,9 +1,7 @@
 
 require File.expand_path('../string_form_manipulation', __FILE__)
 
-class Module
-  private
-
+class Class
   # @param [Array] names A list of exception names that the calling class would
   #  like to define.
   def exceptions(*names)
