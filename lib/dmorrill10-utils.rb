@@ -1,6 +1,5 @@
 require "dmorrill10-utils/version"
 
-require 'dmorrill10-utils/abstract'
 require 'dmorrill10-utils/class'
 require 'dmorrill10-utils/enumerable'
 require 'dmorrill10-utils/integer'
