@@ -23,3 +23,9 @@ Or install it yourself as:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Versioning
+The version number will change according to the following scheme:
+- The major number will be incremented on non-backwards compatible updates.
+- The minor number will be incremented on backwards compatible strict API extensions.
+- The patch number will be incremented on backwards compatible changes that do not effect the API
